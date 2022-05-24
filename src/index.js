@@ -29,7 +29,10 @@ Object.defineProperty(module.exports, 'logger', {
   get: getLogger,
 });
 
-export default ParseServer;
+const JujuServer = ParseServer;
+const JujuGraphQLServer = ParseGraphQLServer;
+
+export default JujuServer || ParseServer;
 export {
   S3Adapter,
   GCSAdapter,
@@ -41,6 +44,8 @@ export {
   TestUtils,
   PushWorker,
   ParseGraphQLServer,
+  ParseGraphQLServer as JujuGraphQLServer,
   _ParseServer as ParseServer,
+  _ParseServer as JujuServer,
   SchemaMigrations,
 };

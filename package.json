@@ -1,11 +1,11 @@
 {
-  "name": "parse-server",
+  "name": "juju-server",
   "version": "5.3.0-alpha.12",
   "description": "An express module providing a Parse-compatible API server",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/parse-community/parse-server"
+    "url": "https://github.com/codesouche/parse-server"
   },
   "files": [
     "bin/",
@@ -44,7 +44,7 @@
     "mime": "3.0.0",
     "mongodb": "4.5.0",
     "mustache": "4.2.0",
-    "parse": "3.4.1",
+    "juju": "github:codesouche/Parse-SDK-JS#alpha",
     "pg-monitor": "1.4.1",
     "pg-promise": "10.11.1",
     "pluralize": "8.0.0",
@@ -139,15 +139,6 @@
   },
   "optionalDependencies": {
     "@node-rs/bcrypt": "1.1.0"
-  },
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/parse-server",
-    "logo": "https://opencollective.com/parse-server/logo.txt?reverse=true&variant=binary"
-  },
-  "funding": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/parse-server"
   },
   "husky": {
     "hooks": {
