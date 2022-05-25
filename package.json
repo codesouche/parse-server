@@ -136,7 +136,8 @@
     "node": ">=12.22.10 <19"
   },
   "bin": {
-    "parse-server": "bin/parse-server"
+    "parse-server": "bin/parse-server",
+    "juju-server": "bin/juju-server"
   },
   "optionalDependencies": {
     "@node-rs/bcrypt": "1.1.0"
